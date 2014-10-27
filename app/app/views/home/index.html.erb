@@ -1,0 +1,4 @@
+  <%= form_tag("maps/index", :method => :get) do %>
+    <%= text_field_tag(:user_location) %>
+    <%= submit_tag("Find LastFM items")  %>
+  <% end %>
