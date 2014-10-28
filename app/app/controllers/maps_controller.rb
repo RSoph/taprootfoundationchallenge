@@ -1,11 +1,13 @@
 class MapsController < ApplicationController
 
 	def index
-		binding.pry
 		if params[:user_location]
 			@location = params[:user_location]
 		else
 			@location = "no location"
+		end
+		if Map.findings(@location)["events"]
+			@nearby_events = Map.findings(@location)["events"]["event"]
 		end
 	end
 
