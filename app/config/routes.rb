@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'maps/:location' => 'maps#index'
+  get 'maps' => 'maps#index'
 
-  post 'maps/:location' => 'maps#index'
+  # post 'maps/:location' => 'maps#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

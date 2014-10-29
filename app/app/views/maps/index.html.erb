@@ -36,9 +36,10 @@
 	<p>Here's what's happening this week:</p>
 	 <%@nearby_events.each do |event|%>
 	<li>
+	<img src=<%=event["image"][3]["#text"]%> height=100px>
 	<a href=<%=event["url"]%>><%= event["title"]%></a>
 	<br>
-	<a href=<%=event["venue"]["website"]%>><%= event["venue"]["name"]%></a>
+	<a href="<%=event["venue"]["website"]%>"><%= event["venue"]["name"]%></a>
 	<br>
 	<%=event["venue"]["location"]["street"]%>
 	<br>

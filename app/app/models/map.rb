@@ -12,8 +12,4 @@ class Map < ActiveRecord::Base
     return @json_hash
 
 	end
-end
-
-
-# api_response = HTTParty.get("http://ws.audioscrobbler.com/2.0/?method=geo.getevents&location=new+york&api_key=84349af8e9e4fed796bd43485d8d4b9d&format=json")
-		
+end		
