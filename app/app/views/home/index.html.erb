@@ -1,4 +1,12 @@
-  <%= form_tag("maps/index", :method => :get) do %>
-    <%= text_field_tag(:user_location) %>
-    <%= submit_tag("Find LastFM items")  %>
-  <% end %>
+<div class="header_one">
+	<h1>Welcome to Kate's LastFM!</h1>
+</div>
+<div class="search">
+	<p> Please type your location:</p>
+	<div id="home_search" class="home_search">
+ 		<%= form_tag("maps/index", :method => :get) do %>
+ 	  <%= text_field_tag(:user_location) %>
+  	<%= submit_tag("Find LastFM items")  %>
+  	<% end %>
+	</div>
+</div>
